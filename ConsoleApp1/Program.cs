@@ -12,10 +12,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             GO go = new GO();
-           
-           go.kj.v.z.moon.mxm = 5;
-            
-            Console.WriteLine(go.kj.v.z.moon.mxm);
+            Console.Write("Enter number:");
+            int number = go.kj.v.z.moon.mxm;
+            number = int.Parse(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(number);
             Console.ResetColor();
         }
     }
